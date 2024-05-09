@@ -100,10 +100,10 @@ StartClothes = {
 -- LANG
 -----------------------------------------------------------------------------------------------------------------------------------------
 Lang = {
-	["Join"] = "Entrando em Kaduzera Network...",
-	["Connecting"] = "Conectando em Kaduzera Network...",
-	["Position"] = "Você é o %d/%d da fila, aguarde sua conexão com a Kaduzera Network",
-	["Error"] = "Conexão perdida com a Kaduzera Network."
+	["Join"] = "Entrando em (Nome da cidade)...",
+	["Connecting"] = "Conectando em (Nome da cidade)...",
+	["Position"] = "Você é o %d/%d da fila, aguarde sua conexão com a (Nome da cidade)",
+	["Error"] = "Conexão perdida com a (Nome da cidade)."
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- QUEUE
