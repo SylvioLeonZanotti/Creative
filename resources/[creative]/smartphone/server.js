@@ -1873,7 +1873,7 @@ p6(async function () {
                 return rK;
             }), await Promise.resolve().then(function () {
                 return s9;
-            }), emit('smartphone:isReady'), console.log('[SMARTPHONE] VAZAMENTO BY GHOST.XITT'), pz.metadata('video_server', config.client.videoServer || null), pz.metadata('apps', config.client.customApps || null);
+            }), emit('smartphone:isReady'), console.log('[SMARTPHONE] Iniciado com sucesso'), pz.metadata('video_server', config.client.videoServer || null), pz.metadata('apps', config.client.customApps || null);
         }
     } catch (x) {
         console.error('Wait, what?'), await p2(5000);

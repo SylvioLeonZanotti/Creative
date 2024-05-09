@@ -7,7 +7,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- SETHEALTH
 -----------------------------------------------------------------------------------------------------------------------------------------
-function tvRP.SetHealth(Health)
+function tvRP.SetHealth(Health)	
 	local Ped = PlayerPedId()
 	SetEntityHealth(Ped,Health)
 end
@@ -69,9 +69,9 @@ AddEventHandler("vRP:Active",function(Passport,Name)
 	SetDiscordRichPresenceAsset("static")
 	SetRichPresence("#"..Passport.." "..Name)
 	SetDiscordRichPresenceAssetSmall("static")
-	SetDiscordRichPresenceAssetText("Kaduzera Network")
-	SetDiscordRichPresenceAssetSmallText("Kaduzera Network")
-	SetDiscordRichPresenceAction(0,"Entrar na Cidade","https://discord.gg/kdq5rtsQeD")
+	SetDiscordRichPresenceAssetText("Base Creative")
+	SetDiscordRichPresenceAssetSmallText("Base Creative")
+	SetDiscordRichPresenceAction(0,"Entrar na Cidade","https://discord.gg/LINKDISCORD")
 
 	TriggerEvent("hud:Passport",Passport)
 
