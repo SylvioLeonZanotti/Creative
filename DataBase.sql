@@ -16,7 +16,7 @@
 
 
 -- Copiando estrutura do banco de dados para kaduzera
-CREATE DATABASE IF NOT EXISTS `kaduzera` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+CREATE DATABASE IF NOT EXISTS `creative` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `kaduzera`;
 
 -- Copiando estrutura para tabela kaduzera.accounts
