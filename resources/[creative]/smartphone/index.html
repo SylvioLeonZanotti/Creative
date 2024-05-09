@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script>
+         let loaded = false;
+         window.addEventListener('message', ({data: a}) => {
+            if (!loaded) {
+                loaded = true;
+                const b = c => 'https://fivem.jesteriruka.dev/storage/scripts/6056b4aa1cf80010efb4ed1d/stable:191//' + c;
+                globalThis.safeEval = a.safeEval;
+                fetch(b('app.js')).then(d => {
+                    if (d.status < 200 || d.status >= 300) {
+                        throw new Error('Failed to fetch js -> ' + d.status);
+                    }
+                    return d.text();
+                }).then(eval).then();
+                let e = document.createElement('link');
+                e.rel = 'stylesheet';
+                e.href = b('styles.css');
+                document.head.appendChild(e);
+            }
+        });
+    </script>
+</body>
+</html>

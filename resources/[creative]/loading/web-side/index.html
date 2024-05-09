@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>#complexo loadscreen</title>
+    <script src="nui://game/ui/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript">
+        var music = document.getElementById("music");
+        music.volume = 0.2;
+        document.onkeydown = function(data) {
+            switch (data.keyCode){
+                case 32:
+                    if(music.paused){
+                        music.play();
+                    } else {
+                        music.pause();
+                    }
+                    break
+                case 38:
+                    music.volume += 0.1
+                    break
+                case 40:
+                    music.volume -= 0.1
+                    break
+            }
+        };
+    </script>
+    <video id="background-video" autoplay loop muted poster="video.mp4">
+        <source src="video.mp4" autoplay type="video/mp4">
+    </video>
+    <div class="subt">
+        <span>[ ↑ / ↓ ] Volume - [ESPAÇO] Pause/Play</span>
+    </div>
+</body>
+</html>
+</body>
+</html>

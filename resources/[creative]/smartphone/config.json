@@ -1,0 +1,74 @@
+{
+    "token": "73f816ef-c914-40da-a5e0-a60510e7a84e",
+    "client": {
+        "instagramLogo": "https://media.discordapp.net/attachments/852981021296295936/1064016211756716093/instagram.png",
+        "apps": {
+            "calculator": "https://media.discordapp.net/attachments/852981021296295936/1064015597425393734/calculator.png",
+            "notes": "https://media.discordapp.net/attachments/852981021296295936/1064016761185382490/notes.png",
+            "settings": "https://media.discordapp.net/attachments/852981021296295936/1064016897160523929/settings.png",
+            "contacts": "https://fivem.jesteriruka.dev/apps/samsung/contacts.webp",
+            "sms": "https://media.discordapp.net/attachments/852981021296295936/1064017296902864968/sms.png",
+            "gallery": "https://media.discordapp.net/attachments/852981021296295936/1064017368172482670/gallery.png",
+            "phone": "https://media.discordapp.net/attachments/852981021296295936/1064017458484228096/phone.png",
+            "facetime": "https://media.discordapp.net/attachments/852981021296295936/1064017531817431130/facetime.webp",
+            "instagram": {
+                "name": "Instagram",
+                "icon": "https://media.discordapp.net/attachments/852981021296295936/1064016211756716093/instagram.png"
+            },
+            "minesweeper": {
+                "name": "Minadin",
+                "icon": "https://media.discordapp.net/attachments/852981021296295936/1064016523355758673/minado.png"
+            },
+            "truco": "https://media.discordapp.net/attachments/852981021296295936/1064016602330312755/truco.png",
+            "yellowpages": {
+                "name": "Yellow P.",
+                "icon": "https://media.discordapp.net/attachments/852981021296295936/1064015729298518138/yellowpages.png"
+            },
+            "tinder": {
+                "name": "SelfLove",
+                "icon": "https://media.discordapp.net/attachments/852981021296295936/1064015816456159262/tinder.png"
+            },
+            "whatsapp": {
+                "name": "Zap-Zap",
+                "icon": "https://media.discordapp.net/attachments/852981021296295936/1064015667369627720/whatsapp.png"
+            },
+            "tor": {
+                "name": "Deep Web",
+                "icon": "https://media.discordapp.net/attachments/852981021296295936/1064016693636104343/tor.png"
+            },
+            "bank": "https://media.discordapp.net/attachments/852981021296295936/1064016390744440894/fleeca.png",
+            "weazel": {
+                "name": "BahNews"
+            }
+        },
+        "bankType": "fleeca",
+        "uploadServer": "https://discord.com/api/webhooks/1134548185830916136/acHbfPAtf_KuOLONTHJNAtL7RrRsEDjDU33NcKq4Jwr98lXouShUXHjp-G1VgIVyatb_",
+        "allowUnsafeURL": true,
+        "videoServer": "ws://20.226.40.131:8080",
+        "case": "s9",
+        "isAndroid": false,
+        "useGameClock": true,
+        "phone_template": "XXX-XXX",
+        "backgroundURL": "https://cdn.discordapp.com/attachments/1023610534702108732/1129543134804713583/wallpaper.png",
+        "disabledApps": [],
+        "ringSound": "https://rotbots.netlify.app/projects/smartphone/sons/ring.ogg",
+        "notificationSound": "https://rotbots.netlify.app/projects/smartphone/sons/notification.ogg"
+    },
+
+    "call_mode": "pma-voice",
+    "webhookURL": "https://discord.com/api/webhooks/1134548185830916136/acHbfPAtf_KuOLONTHJNAtL7RrRsEDjDU33NcKq4Jwr98lXouShUXHjp-G1VgIVyatb_",
+    "instagram_verify": "Verify",
+    "instagram_accounts": {
+        "*": 1,
+        "Premium": 2
+    },
+    "moderator": "Admin",
+    "item": "cellphone",
+    "services": [
+        { "name": "Policia", "number": "190", "permission": "Police", "dev": false },
+        { "name": "Paramédico", "number": "192", "permission": "Paramedic", "dev": false },
+        { "name": "Mecânica Bennys", "number": "0800 041", "permission": "Bennys", "dev": false },
+        { "name": "Mecânica Sul", "number": "0800 042", "permission": "Mechanic", "dev": false }
+    ],
+    "base": "Kaduzera_network"
+}
