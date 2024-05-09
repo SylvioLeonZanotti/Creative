@@ -15,11 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Copiando estrutura do banco de dados para kaduzera
+-- Copiando estrutura do banco de dados para creative
 CREATE DATABASE IF NOT EXISTS `creative` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `kaduzera`;
+USE `creative`;
 
--- Copiando estrutura para tabela kaduzera.accounts
+-- Copiando estrutura para tabela creative.accounts
 CREATE TABLE IF NOT EXISTS `accounts` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `whitelist` tinyint(1) NOT NULL DEFAULT 0,
@@ -35,9 +35,9 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.accounts: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.accounts: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.banneds
+-- Copiando estrutura para tabela creative.banneds
 CREATE TABLE IF NOT EXISTS `banneds` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `license` varchar(50) NOT NULL,
@@ -46,9 +46,9 @@ CREATE TABLE IF NOT EXISTS `banneds` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.banneds: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.banneds: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.characters
+-- Copiando estrutura para tabela creative.characters
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `license` varchar(50) DEFAULT NULL,
@@ -72,9 +72,9 @@ CREATE TABLE IF NOT EXISTS `characters` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.characters: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.characters: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.chests
+-- Copiando estrutura para tabela creative.chests
 CREATE TABLE IF NOT EXISTS `chests` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `chests` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.chests: ~30 rows (aproximadamente)
+-- Copiando dados para a tabela creative.chests: ~30 rows (aproximadamente)
 INSERT INTO `chests` (`id`, `name`, `weight`, `perm`, `logs`) VALUES
 	(1, 'Police', 500, 'Police', 1),
 	(2, 'Paramedico', 500, 'Paramedico', 1),
@@ -118,7 +118,7 @@ INSERT INTO `chests` (`id`, `name`, `weight`, `perm`, `logs`) VALUES
 	(31, 'TheSouth', 500, 'TheSouth', 1),
 	(32, 'Vineyard', 500, 'Vineyard', 1);
 
--- Copiando estrutura para tabela kaduzera.dependents
+-- Copiando estrutura para tabela creative.dependents
 CREATE TABLE IF NOT EXISTS `dependents` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(10) NOT NULL DEFAULT 0,
@@ -129,9 +129,9 @@ CREATE TABLE IF NOT EXISTS `dependents` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.dependents: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.dependents: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.entitydata
+-- Copiando estrutura para tabela creative.entitydata
 CREATE TABLE IF NOT EXISTS `entitydata` (
   `dkey` varchar(100) NOT NULL,
   `dvalue` longtext DEFAULT NULL,
@@ -139,9 +139,9 @@ CREATE TABLE IF NOT EXISTS `entitydata` (
   KEY `dkey` (`dkey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.entitydata: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.entitydata: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.fidentity
+-- Copiando estrutura para tabela creative.fidentity
 CREATE TABLE IF NOT EXISTS `fidentity` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL DEFAULT '',
@@ -152,9 +152,9 @@ CREATE TABLE IF NOT EXISTS `fidentity` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.fidentity: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.fidentity: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.fines
+-- Copiando estrutura para tabela creative.fines
 CREATE TABLE IF NOT EXISTS `fines` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(10) NOT NULL DEFAULT 0,
@@ -168,9 +168,9 @@ CREATE TABLE IF NOT EXISTS `fines` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.fines: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.fines: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.investments
+-- Copiando estrutura para tabela creative.investments
 CREATE TABLE IF NOT EXISTS `investments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(10) NOT NULL DEFAULT 0,
@@ -183,9 +183,9 @@ CREATE TABLE IF NOT EXISTS `investments` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.investments: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.investments: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.invoices
+-- Copiando estrutura para tabela creative.invoices
 CREATE TABLE IF NOT EXISTS `invoices` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(10) NOT NULL DEFAULT 0,
@@ -199,9 +199,9 @@ CREATE TABLE IF NOT EXISTS `invoices` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.invoices: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.invoices: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.organizations
+-- Copiando estrutura para tabela creative.organizations
 CREATE TABLE IF NOT EXISTS `organizations` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -212,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `organizations` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.organizations: ~16 rows (aproximadamente)
+-- Copiando dados para a tabela creative.organizations: ~16 rows (aproximadamente)
 INSERT INTO `organizations` (`id`, `name`, `bank`, `premium`, `buff`) VALUES
 	(1, 'Police', 0, 0, 0),
 	(2, 'Paramedic', 0, 0, 0),
@@ -231,7 +231,7 @@ INSERT INTO `organizations` (`id`, `name`, `bank`, `premium`, `buff`) VALUES
 	(15, 'Barragem', 0, 0, 0),
 	(16, 'Farol', 0, 0, 0);
 
--- Copiando estrutura para tabela kaduzera.org_transactions
+-- Copiando estrutura para tabela creative.org_transactions
 CREATE TABLE IF NOT EXISTS `org_transactions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -241,9 +241,9 @@ CREATE TABLE IF NOT EXISTS `org_transactions` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.org_transactions: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.org_transactions: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.playerdata
+-- Copiando estrutura para tabela creative.playerdata
 CREATE TABLE IF NOT EXISTS `playerdata` (
   `Passport` int(11) NOT NULL,
   `dkey` varchar(100) NOT NULL,
@@ -253,9 +253,9 @@ CREATE TABLE IF NOT EXISTS `playerdata` (
   KEY `dkey` (`dkey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.playerdata: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.playerdata: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.port
+-- Copiando estrutura para tabela creative.port
 CREATE TABLE IF NOT EXISTS `port` (
   `portId` int(11) NOT NULL AUTO_INCREMENT,
   `identity` longtext DEFAULT NULL,
@@ -269,9 +269,9 @@ CREATE TABLE IF NOT EXISTS `port` (
   KEY `portId` (`portId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Copiando dados para a tabela kaduzera.port: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.port: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.prison
+-- Copiando estrutura para tabela creative.prison
 CREATE TABLE IF NOT EXISTS `prison` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `police` varchar(255) DEFAULT '0',
@@ -288,9 +288,9 @@ CREATE TABLE IF NOT EXISTS `prison` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Copiando dados para a tabela kaduzera.prison: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.prison: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.propertys
+-- Copiando estrutura para tabela creative.propertys
 CREATE TABLE IF NOT EXISTS `propertys` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(20) NOT NULL DEFAULT 'Homes0001',
@@ -308,9 +308,9 @@ CREATE TABLE IF NOT EXISTS `propertys` (
   KEY `Name` (`Name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.propertys: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.propertys: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.races
+-- Copiando estrutura para tabela creative.races
 CREATE TABLE IF NOT EXISTS `races` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Race` int(3) NOT NULL DEFAULT 0,
@@ -323,9 +323,9 @@ CREATE TABLE IF NOT EXISTS `races` (
   KEY `Race` (`Race`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.races: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.races: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_bank_invoices
+-- Copiando estrutura para tabela creative.smartphone_bank_invoices
 CREATE TABLE IF NOT EXISTS `smartphone_bank_invoices` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `payee_id` int(11) NOT NULL,
@@ -338,18 +338,18 @@ CREATE TABLE IF NOT EXISTS `smartphone_bank_invoices` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_bank_invoices: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_bank_invoices: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_blocks
+-- Copiando estrutura para tabela creative.smartphone_blocks
 CREATE TABLE IF NOT EXISTS `smartphone_blocks` (
   `user_id` int(11) NOT NULL,
   `phone` varchar(32) NOT NULL,
   PRIMARY KEY (`user_id`,`phone`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_blocks: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_blocks: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_calls
+-- Copiando estrutura para tabela creative.smartphone_calls
 CREATE TABLE IF NOT EXISTS `smartphone_calls` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `initiator` varchar(50) NOT NULL,
@@ -364,9 +364,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_calls` (
   KEY `target_index` (`target`)
 ) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_calls: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_calls: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_casino
+-- Copiando estrutura para tabela creative.smartphone_casino
 CREATE TABLE IF NOT EXISTS `smartphone_casino` (
   `user_id` int(11) NOT NULL,
   `balance` bigint(20) NOT NULL DEFAULT 0,
@@ -376,9 +376,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_casino` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_casino: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_casino: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_contacts
+-- Copiando estrutura para tabela creative.smartphone_contacts
 CREATE TABLE IF NOT EXISTS `smartphone_contacts` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `owner` varchar(50) NOT NULL,
@@ -388,9 +388,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_contacts` (
   KEY `owner_index` (`owner`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_contacts: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_contacts: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_gallery
+-- Copiando estrutura para tabela creative.smartphone_gallery
 CREATE TABLE IF NOT EXISTS `smartphone_gallery` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
@@ -401,9 +401,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_gallery` (
   KEY `user_id_index` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_gallery: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_gallery: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_instagram
+-- Copiando estrutura para tabela creative.smartphone_instagram
 CREATE TABLE IF NOT EXISTS `smartphone_instagram` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -416,27 +416,27 @@ CREATE TABLE IF NOT EXISTS `smartphone_instagram` (
   KEY `user_id_index` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_instagram: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_instagram: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_instagram_followers
+-- Copiando estrutura para tabela creative.smartphone_instagram_followers
 CREATE TABLE IF NOT EXISTS `smartphone_instagram_followers` (
   `follower_id` bigint(20) NOT NULL,
   `profile_id` bigint(20) NOT NULL,
   PRIMARY KEY (`follower_id`,`profile_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_instagram_followers: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_instagram_followers: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_instagram_likes
+-- Copiando estrutura para tabela creative.smartphone_instagram_likes
 CREATE TABLE IF NOT EXISTS `smartphone_instagram_likes` (
   `post_id` bigint(20) NOT NULL,
   `profile_id` bigint(20) NOT NULL,
   PRIMARY KEY (`post_id`,`profile_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_instagram_likes: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_instagram_likes: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_instagram_notifications
+-- Copiando estrutura para tabela creative.smartphone_instagram_notifications
 CREATE TABLE IF NOT EXISTS `smartphone_instagram_notifications` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `profile_id` int(11) NOT NULL,
@@ -448,9 +448,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_instagram_notifications` (
   KEY `profile_id_index` (`profile_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_instagram_notifications: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_instagram_notifications: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_instagram_posts
+-- Copiando estrutura para tabela creative.smartphone_instagram_posts
 CREATE TABLE IF NOT EXISTS `smartphone_instagram_posts` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `profile_id` bigint(20) NOT NULL,
@@ -464,9 +464,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_instagram_posts` (
   KEY `post_id_index` (`post_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_instagram_posts: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_instagram_posts: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_olx
+-- Copiando estrutura para tabela creative.smartphone_olx
 CREATE TABLE IF NOT EXISTS `smartphone_olx` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
@@ -480,9 +480,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_olx` (
   KEY `user_id_index` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_olx: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_olx: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_paypal_transactions
+-- Copiando estrutura para tabela creative.smartphone_paypal_transactions
 CREATE TABLE IF NOT EXISTS `smartphone_paypal_transactions` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) NOT NULL,
@@ -496,9 +496,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_paypal_transactions` (
   KEY `target_index` (`target`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_paypal_transactions: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_paypal_transactions: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_tinder
+-- Copiando estrutura para tabela creative.smartphone_tinder
 CREATE TABLE IF NOT EXISTS `smartphone_tinder` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
@@ -517,9 +517,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_tinder` (
   KEY `target_index` (`target`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_tinder: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_tinder: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_tinder_messages
+-- Copiando estrutura para tabela creative.smartphone_tinder_messages
 CREATE TABLE IF NOT EXISTS `smartphone_tinder_messages` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `sender` int(11) NOT NULL,
@@ -532,9 +532,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_tinder_messages` (
   KEY `target_index` (`target`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_tinder_messages: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_tinder_messages: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_tinder_rating
+-- Copiando estrutura para tabela creative.smartphone_tinder_rating
 CREATE TABLE IF NOT EXISTS `smartphone_tinder_rating` (
   `profile_id` int(11) NOT NULL,
   `rated_id` int(11) NOT NULL,
@@ -542,9 +542,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_tinder_rating` (
   PRIMARY KEY (`profile_id`,`rated_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_tinder_rating: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_tinder_rating: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_tor_messages
+-- Copiando estrutura para tabela creative.smartphone_tor_messages
 CREATE TABLE IF NOT EXISTS `smartphone_tor_messages` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `channel` varchar(24) NOT NULL DEFAULT 'geral',
@@ -558,9 +558,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_tor_messages` (
   KEY `sender_index` (`sender`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_tor_messages: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_tor_messages: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_tor_payments
+-- Copiando estrutura para tabela creative.smartphone_tor_payments
 CREATE TABLE IF NOT EXISTS `smartphone_tor_payments` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `sender` bigint(20) NOT NULL,
@@ -572,27 +572,27 @@ CREATE TABLE IF NOT EXISTS `smartphone_tor_payments` (
   KEY `target_index` (`target`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_tor_payments: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_tor_payments: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_twitter_followers
+-- Copiando estrutura para tabela creative.smartphone_twitter_followers
 CREATE TABLE IF NOT EXISTS `smartphone_twitter_followers` (
   `follower_id` bigint(20) NOT NULL,
   `profile_id` bigint(20) NOT NULL,
   KEY `profile_id_index` (`profile_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_twitter_followers: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_twitter_followers: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_twitter_likes
+-- Copiando estrutura para tabela creative.smartphone_twitter_likes
 CREATE TABLE IF NOT EXISTS `smartphone_twitter_likes` (
   `tweet_id` bigint(20) NOT NULL,
   `profile_id` bigint(20) NOT NULL,
   KEY `tweet_id_index` (`tweet_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_twitter_likes: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_twitter_likes: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_twitter_profiles
+-- Copiando estrutura para tabela creative.smartphone_twitter_profiles
 CREATE TABLE IF NOT EXISTS `smartphone_twitter_profiles` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
@@ -606,9 +606,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_twitter_profiles` (
   KEY `user_id_index` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_twitter_profiles: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_twitter_profiles: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_twitter_tweets
+-- Copiando estrutura para tabela creative.smartphone_twitter_tweets
 CREATE TABLE IF NOT EXISTS `smartphone_twitter_tweets` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `profile_id` int(11) NOT NULL,
@@ -621,9 +621,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_twitter_tweets` (
   KEY `tweet_id_index` (`tweet_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_twitter_tweets: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_twitter_tweets: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_weazel
+-- Copiando estrutura para tabela creative.smartphone_weazel
 CREATE TABLE IF NOT EXISTS `smartphone_weazel` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
@@ -638,9 +638,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_weazel` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_weazel: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_weazel: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_whatsapp
+-- Copiando estrutura para tabela creative.smartphone_whatsapp
 CREATE TABLE IF NOT EXISTS `smartphone_whatsapp` (
   `owner` varchar(32) NOT NULL,
   `avatarURL` varchar(255) DEFAULT NULL,
@@ -648,9 +648,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_whatsapp` (
   PRIMARY KEY (`owner`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_whatsapp: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_whatsapp: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_whatsapp_channels
+-- Copiando estrutura para tabela creative.smartphone_whatsapp_channels
 CREATE TABLE IF NOT EXISTS `smartphone_whatsapp_channels` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `sender` varchar(50) NOT NULL,
@@ -660,9 +660,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_whatsapp_channels` (
   KEY `target_index` (`target`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_whatsapp_channels: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_whatsapp_channels: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_whatsapp_groups
+-- Copiando estrutura para tabela creative.smartphone_whatsapp_groups
 CREATE TABLE IF NOT EXISTS `smartphone_whatsapp_groups` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
@@ -673,9 +673,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_whatsapp_groups` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_whatsapp_groups: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_whatsapp_groups: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.smartphone_whatsapp_messages
+-- Copiando estrutura para tabela creative.smartphone_whatsapp_messages
 CREATE TABLE IF NOT EXISTS `smartphone_whatsapp_messages` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `channel_id` bigint(20) unsigned NOT NULL,
@@ -692,9 +692,9 @@ CREATE TABLE IF NOT EXISTS `smartphone_whatsapp_messages` (
   KEY `channel_id_index` (`channel_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.smartphone_whatsapp_messages: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.smartphone_whatsapp_messages: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.taxs
+-- Copiando estrutura para tabela creative.taxs
 CREATE TABLE IF NOT EXISTS `taxs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(10) NOT NULL DEFAULT 0,
@@ -708,9 +708,9 @@ CREATE TABLE IF NOT EXISTS `taxs` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.taxs: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.taxs: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.transactions
+-- Copiando estrutura para tabela creative.transactions
 CREATE TABLE IF NOT EXISTS `transactions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(10) NOT NULL DEFAULT 0,
@@ -723,9 +723,9 @@ CREATE TABLE IF NOT EXISTS `transactions` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.transactions: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.transactions: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.vehicles
+-- Copiando estrutura para tabela creative.vehicles
 CREATE TABLE IF NOT EXISTS `vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Passport` int(11) NOT NULL,
@@ -748,9 +748,9 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   KEY `vehicle` (`vehicle`)
 ) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.vehicles: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.vehicles: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.warehouse
+-- Copiando estrutura para tabela creative.warehouse
 CREATE TABLE IF NOT EXISTS `warehouse` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -763,9 +763,9 @@ CREATE TABLE IF NOT EXISTS `warehouse` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Copiando dados para a tabela kaduzera.warehouse: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.warehouse: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela kaduzera.warrants
+-- Copiando estrutura para tabela creative.warrants
 CREATE TABLE IF NOT EXISTS `warrants` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` text DEFAULT NULL,
@@ -778,7 +778,7 @@ CREATE TABLE IF NOT EXISTS `warrants` (
   KEY `portId` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Copiando dados para a tabela kaduzera.warrants: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela creative.warrants: ~0 rows (aproximadamente)
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
